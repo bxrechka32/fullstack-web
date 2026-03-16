@@ -1,0 +1,24 @@
+{
+  "name": "digital-store",
+  "version": "1.0.0",
+  "description": "Интернет-магазин электроники — Практические занятия 1-12, Фронтенд и бэкенд разработка",
+  "main": "server.js",
+  "scripts": {
+    "start:server": "node server.js",
+    "start:client": "npx http-server public -p 3001 -c-1",
+    "sass": "sass styles.scss public/styles.css --style compressed --quiet",
+    "dev": "npm run sass && node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "nanoid": "^3.3.7",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.0",
+    "bcryptjs": "^2.4.3",
+    "swagger-jsdoc": "^6.2.0",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}
